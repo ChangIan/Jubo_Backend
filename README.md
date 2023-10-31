@@ -15,4 +15,5 @@ $ go get -u gopkg.in/yaml.v2
 # Build Local Image on Docker
 $ docker build -t "jubobackend:0.0.1" -t "jubobackend:latest" .
 # Run App on Docker
-$ docker run -d --restart=always --name jubobackend -p 8899:8899 jubobackend:latest
+$ docker network create -d bridge common-network
+$ docker run -d --restart=always --network=common-network --name jubobackend -p 8899:8899 jubobackend:latest
