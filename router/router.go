@@ -3,12 +3,17 @@ package router
 import (
 	"github.com/gin-gonic/gin"
 
+	middleware "changian.com/jubo/middleware"
+
 	controllerV1 "changian.com/jubo/controller/v1"
 )
 
 func SetRouter() *gin.Engine {
 
 	router := gin.Default()
+
+	//
+	router.Use(middleware.CorsMiddleware())
 
 	// 路由组 - 版本管理 - V1
 	groupV1 := router.Group("v1")
