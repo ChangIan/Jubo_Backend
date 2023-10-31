@@ -12,3 +12,7 @@ $ go get -u github.com/gin-gonic/gin
 $ go get -u github.com/lib/pq
 $ go get -u github.com/golang-jwt/jwt
 $ go get -u gopkg.in/yaml.v2
+# Build Local Image on Docker
+$ docker build -t "jubobackend:0.0.1" -t "jubobackend:latest" .
+# Run App on Docker
+$ docker run -d --restart=always --name jubobackend -p 8899:8899 jubobackend:latest
