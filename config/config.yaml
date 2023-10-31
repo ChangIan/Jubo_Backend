@@ -1,0 +1,8 @@
+WebSiteUrl: 0.0.0.0
+WebSitePort: 8899
+JwtKey: E88BCC78-F10F-4728-A410-1ECCFD04F74D
+DbUrl: 127.0.0.1
+DbPort: 5432
+DbName: jubodb
+DbUserName: jubodb
+DbPassword: jubodb
