@@ -6,3 +6,4 @@ DbPort: 5432
 DbName: jubodb
 DbUserName: jubodb
 DbPassword: jubodb
+AccessControlAllowOrigin: http://localhost:8877
